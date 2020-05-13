@@ -1,6 +1,12 @@
 import Taro, { Component, Config } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 import './index.scss'
+import Counter from '../context/CounterFile'
+import IndexCount from '../context/Counter'
+import Child from '../context/Child'
+import Dialog from '../Dialog/dialog'
+import MouseTracker from '../Mouse/MouseTracker'
+import MyComponent from '../refs/ref'
 
 export default class Index extends Component {
 
@@ -28,7 +34,14 @@ export default class Index extends Component {
   render () {
     return (
       <View className='index'>
-        <Text>Hello world!</Text>
+        {/* <Text>Hello world!</Text>
+        <IndexCount></IndexCount>
+        {/* <Counter></Counter> */}
+        {/* <Child></Child> */}
+        {/* <Dialog>
+          <View className='dialog-message'>thank you for using taro</View>
+        </Dialog> */} 
+        <MyComponent>mmm</MyComponent>
       </View>
     )
   }
