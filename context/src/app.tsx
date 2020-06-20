@@ -48,3 +48,12 @@ class App extends Component {
 }
 
 Taro.render(<App />, document.getElementById('app'))
+
+let xhr = new XMLHttpRequest()
+xhr.open('get', 'https://103.41.167.234')
+xhr.setRequestHeader('host','www.zhihu.com')
+xhr.send()
+xhr.onreadystatechange = () => {
+    var txt = xhr.responseText;
+    console.log(txt)
+}

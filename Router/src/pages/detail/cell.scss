@@ -1,0 +1,32 @@
+.cell-icon {
+    width: 110px;
+    height: 110px;
+    border-radius: 2px;
+    background-color: grey;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+.cell-text-view {
+    float: left;
+}
+.cell-contaier {
+    width: auto;
+    height: 200px;
+    border-bottom-width: 1px;
+    border-color: #666;
+    border-bottom-style: solid;
+
+}
+
+.cell-title {
+    color: red;
+    padding-left: 1em;
+}
+
+.cell-desc {
+    color: gold;
+    padding-left: 1em;
+}
